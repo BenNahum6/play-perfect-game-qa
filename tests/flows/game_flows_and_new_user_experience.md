@@ -1,4 +1,4 @@
-# Installation and Core Game Flow
+# Game flows and new user experience
 
 **Tested on:** 16.07.2025
 **Device:** Android S23 FE
