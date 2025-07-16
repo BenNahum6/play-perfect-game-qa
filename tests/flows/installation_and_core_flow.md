@@ -171,25 +171,9 @@ This marks the user's transition into the **core gameplay loop**, where they app
 
 ---
 
-## 7. Post-Game: Level Up & Daily Login Reward
+## 7. Post-Game: 
 
-After completing the **first full game**, the following flow occurs:
-
-### Leaderboard (Repeat Display)
-
-- The user is shown the **Leaderboard screen** again.
-- If ranked among the top 3, a **Claim** button appears to collect the prize.
-- Tapping **Claim** triggers a short animation showing diamonds being added to the user's balance.
-
----
-
-### ⬆Level Up Animation
-
-- Following the leaderboard, the user sees a **Level Up animation**, indicating they've advanced to the next player level.
-- A reward is granted (e.g., bonus diamonds or XP).
-- The screen visually celebrates the achievement with animated effects and sound.
-
----
+After the flow previously described in Sections 4 & 5, the user is presented with the **Daily Login Reward Screen**, which appears once per day upon logging in.
 
 ### Daily Login Reward Screen
 
@@ -202,15 +186,16 @@ This flow both **rewards player activity** and reinforces **daily engagement hab
 
 ---
 
-## 9. New User Experience Summary
+## New User Experience Summary
 
 The game provides a gradual, cohesive, and engaging onboarding experience for new users, including:
 
-- Interactive step-by-step gameplay walkthrough.
-- Confirmations that prevent accidental exits during the tutorial.
-- Instant feedback through score summaries and leaderboards that increase motivation.
-- Engaging animations and daily login rewards to maintain engagement.
-- Smooth transitions between screens to maintain flow and a good user experience.
+- Interactive step-by-step gameplay walkthrough.  
+- Confirmations that prevent accidental exits during the tutorial.  
+- Instant feedback through score summaries and leaderboards that increase motivation.  
+- Engaging animations and daily login rewards to maintain engagement.  
+- Smooth transitions between screens to maintain flow and a good user experience.  
+- Pleasant background music and integrated sound effects accompany user interactions, such as button confirmations and card movements, enhancing immersion and feedback.
 
 This user experience is designed to allow new users to learn quickly, stay engaged, and build long-term gaming habits.
 
