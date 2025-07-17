@@ -15,7 +15,7 @@ The **Daily Treat** feature rewards users for launching the game each day. On th
 
 ---
 
-## Test Case 1: Daily Treat Appears on First App Launch of the Day
+### Test Case 1: Daily Treat Appears on First App Launch of the Day
 
 - **Preconditions**:
   1. User has not opened the app yet today.
@@ -29,7 +29,7 @@ The **Daily Treat** feature rewards users for launching the game each day. On th
 
 ---
 
-## Test Case 2: Daily Treat Requires Tap to Collect Reward
+### Test Case 2: Daily Treat Requires Tap to Collect Reward
 
 - **Preconditions**:
   1. Daily Treat popup is visible.
@@ -44,7 +44,7 @@ The **Daily Treat** feature rewards users for launching the game each day. On th
 
 ---
 
-## Test Case 3: Tap Outside Button Still Collects Reward
+### Test Case 3: Tap Outside Button Still Collects Reward
 
 - **Preconditions**:
   1. Daily Treat popup is visible.
@@ -59,7 +59,7 @@ The **Daily Treat** feature rewards users for launching the game each day. On th
 
 ---
 
-## Test Case 4: Daily Progress Resets If User Skips a Day
+### Test Case 4: Daily Progress Resets If User Skips a Day
 
 - **Preconditions**:
   1. User has not opened the app for more than 24 hours.
@@ -72,7 +72,7 @@ The **Daily Treat** feature rewards users for launching the game each day. On th
 
 ---
 
-## Test Case 5: Daily Treat Progress Continues on Consecutive Days
+### Test Case 5: Daily Treat Progress Continues on Consecutive Days
 
 - **Preconditions**:
   1. User opened the app and collected reward yesterday.
@@ -86,7 +86,7 @@ The **Daily Treat** feature rewards users for launching the game each day. On th
 
 ---
 
-## Test Case 6: Daily Treat Does Not Reappear After Collection on the Same Date
+### Test Case 6: Daily Treat Does Not Reappear After Collection on the Same Date
 
 - **Preconditions**:
   1. User has already collected the Daily Treat reward earlier today.
@@ -103,7 +103,7 @@ The **Daily Treat** feature rewards users for launching the game each day. On th
 ---
 
 
-## Test Case 7: Collected Reward Is Persisted After App Close
+### Test Case 7: Collected Reward Is Persisted After App Close
 
 - **Preconditions**:
   1. User taps to collect reward.
@@ -120,7 +120,7 @@ The **Daily Treat** feature rewards users for launching the game each day. On th
 
 ---
 
-## Test Case 8: Reward Not Collected → Popup "Daily RTreat" Reappears on Next Launch
+### Test Case 8: Reward Not Collected → Popup "Daily RTreat" Reappears on Next Launch
 
 - **Preconditions**:
   1. User opened the app and saw the Daily Treat popup.
@@ -138,7 +138,7 @@ The **Daily Treat** feature rewards users for launching the game each day. On th
 
 ---
 
-## Test Case 9: Daily Treat Works Without Internet Connection
+### Test Case 9: Daily Treat Works Without Internet Connection
 
 - **Preconditions**:
   1. Device is offline.
@@ -155,7 +155,7 @@ The **Daily Treat** feature rewards users for launching the game each day. On th
 
 ---
 
-## Test Case 10: Collect Daily Treat Reward After Losing Internet Connection
+### Test Case 10: Collect Daily Treat Reward After Losing Internet Connection
 
 - **Preconditions**:
   1. Launch the app with internet connection.
@@ -172,7 +172,7 @@ The **Daily Treat** feature rewards users for launching the game each day. On th
 
 ---
 
-## Test Case 11: Animation of Diamonds Is Triggered on Reward Collect
+### Test Case 11: Animation of Diamonds Is Triggered on Reward Collect
 
 - **Preconditions**: 
   1. User is launching the app for the first time on day.
@@ -186,7 +186,7 @@ The **Daily Treat** feature rewards users for launching the game each day. On th
 
 ---
 
-## Test Case 12: Correct Diamond Count Is Added After Collection
+### Test Case 12: Correct Diamond Count Is Added After Collection
 
 - **Preconditions**:
   1. User has a known diamond balance (e.g., 120).
@@ -201,7 +201,7 @@ The **Daily Treat** feature rewards users for launching the game each day. On th
 
 ---
 
-## Test Case 13: Daily Treat Reward Not Granted Twice on Different Devices Same Day
+### Test Case 13: Daily Treat Reward Not Granted Twice on Different Devices Same Day
 
 - **Preconditions**:
   1. User is logged into the same account (e.g., +972 54XXXXXXX) on Device A and Device B.
@@ -218,7 +218,7 @@ The **Daily Treat** feature rewards users for launching the game each day. On th
 
 ---
 
-## Test Case 14: Daily Treat Reward Collection Synchronizes Across Devices
+### Test Case 14: Daily Treat Reward Collection Synchronizes Across Devices
 
 - **Preconditions**:
   1. User is logged into the same account on Device A and Device B.
@@ -235,7 +235,7 @@ The **Daily Treat** feature rewards users for launching the game each day. On th
 
 ---
 
-## Test Case 15: Streak Progress Consistency Between Devices
+### Test Case 15: Streak Progress Consistency Between Devices
 
 - **Preconditions**:
   1. User is logged into the same account on Device A and Device B.
@@ -252,7 +252,7 @@ The **Daily Treat** feature rewards users for launching the game each day. On th
 
 ---
 
-## Test Case 16: Simultaneous Daily Treat Reward Collection on Two Devices
+### Test Case 16: Simultaneous Daily Treat Reward Collection on Two Devices
 
 - **Preconditions**:
   1. User is logged into the same account on **Device A** and **Device B**.
@@ -274,7 +274,7 @@ The **Daily Treat** feature rewards users for launching the game each day. On th
 
 ---
 
-## Test Case 17: Offline Device Synchronization After Reconnecting
+### Test Case 17: Offline Device Synchronization After Reconnecting
 
 - **Preconditions**:
   1. User is logged into the same account on Device A and Device B.
@@ -492,7 +492,7 @@ The **Daily Treat** feature rewards users for launching the game each day. On th
 
 ---
 
-## Notes
+### Notes
 
 - No critical bugs or crashes found.
 - Consistent behavior across devices, network states, and app versions.
