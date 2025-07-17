@@ -14,7 +14,7 @@ Authored Sanity Test Case Document Developed a comprehensive sanity checklist ba
 Conducted thorough testing of the "Daily Treat" feature, documenting a dedicated test case that includes detailed flow steps, validations, and edge scenarios to ensure reliable functionality.
 
 ## Folder Structure:
-
+```bash
 tests/
 ├── features/
 │   └── Daily_Treat.md
@@ -22,4 +22,5 @@ tests/
 │   └── game_flows_and_new_user_experience.md
 └── sanity/
     └── sanity_test_cases_game_flow.md
+```
 
