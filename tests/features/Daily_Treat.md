@@ -296,83 +296,83 @@ The **Daily Treat** feature rewards users for launching the game each day. On th
 
 ### Test Case 18: Timezone Manipulation
 
-**Preconditions:**
- 1. Device is set to real timezone.
- 2. User has collected reward today.
+- **Preconditions:**
+  1. Device is set to real timezone.
+  2. User has collected reward today.
 
-**Steps:**
- 1. Change device timezone backward (e.g., +3 → -5).
- 2. Relaunch app.
+- **Steps:**
+  1. Change device timezone backward (e.g., +3 → -5).
+  2. Relaunch app.
 
-**Expected Result:**
- 1. App uses server time, not device time.
- 2. Daily Treat is not shown again based on fake timezone.
+- **Expected Result:**
+  1. App uses server time, not device time.
+  2. Daily Treat is not shown again based on fake timezone.
 
 ---
 
 ### Test Case 19: Concurrent Logins From 3+ Devices
 
-**Preconditions:**
-- User is logged in on Device A, B, and C (simultaneously).
-- Open the App in three divices (A & B & C).
+- **Preconditions:**
+  1. User is logged in on Device A, B, and C (simultaneously).
+  2. Open the App in three divices (A & B & C).
 
-**Steps:**
-1. Collect reward from Device A.
-2. Open app on Device B and C simultaneously.
+- **Steps:**
+ 1. Collect reward from Device A.
+ 2. Open app on Device B and C simultaneously.
 
-**Expected Result:**
-- No reward duplication.
-- All 3 devices reflect same streak and diamond count.
-- No inconsistency or reward desync.
-
----
-
-### Test Case 22: App Update Between Days
-
-**Preconditions:**
- 1. User has app version X, with streak at Day 4.
-
-**Steps:**
- 1. Update app to version Y.
- 2. Open app next day.
-
-**Expected Result:**
- 1. Daily Treat continues at Day 5.
- 2. No regression due to app update.
- 3. Persistent data remains consistent.
+- **Expected Result:**
+  1. No reward duplication.
+  2. All 3 devices reflect same streak and diamond count.
+  3. No inconsistency or reward desync.
 
 ---
 
-### Test Case 23: Accessibility / Screen Reader Test
+### Test Case 20: App Update Between Days
 
-**Preconditions:**
- 1. Device has TalkBack (or screen reader) enabled.
+- **Preconditions:**
+  1. User has app version X, with streak at Day 4.
 
-**Steps:**
- 1. Open app and receive Daily Treat popup.
- 2. Try to collect reward via screen reader or keyboard nav (if on emulator).
+- **Steps:**
+  1. Update app to version Y.
+  2. Open app next day.
 
-**Expected Result:**
- 1. UI is accessible (popup focusable, tappable).
- 2. Reward can be collected via accessibility tools.
+- **Expected Result:**
+  1. Daily Treat continues at Day 5.
+  2. No regression due to app update.
+  3. Persistent data remains consistent.
+
+---
+
+### Test Case 21: Accessibility / Screen Reader Test
+
+- **Preconditions:**
+  1. Device has TalkBack (or screen reader) enabled.
+
+- **Steps:**
+  1. Open app and receive Daily Treat popup.
+  2. Try to collect reward via screen reader or keyboard nav (if on emulator).
+
+- **Expected Result:**
+  1. UI is accessible (popup focusable, tappable).
+  2. Reward can be collected via accessibility tools.
 
 ---
 
 ### Test Case 22: Cross-Platform Synchronization (Android & iOS) on Daily Treat Collection
 
-**Preconditions:**
- 1. User is logged into the same account on both an Android device and an iOS device.
- 2. Both devices are online and the Daily Treat reward has not yet been collected for the day.
+- **Preconditions:**
+  1. User is logged into the same account on both an Android device and an iOS device.
+  2. Both devices are online and the Daily Treat reward has not yet been collected for the day.
 
-**Steps:**
-1. On the Android/IOS device, open the app and collect the Daily Treat reward.
-2. Immediately after, open or refresh the app on the iOS/Android device.
+- **Steps:**
+  1. On the Android/IOS device, open the app and collect the Daily Treat reward.
+  2. Immediately after, open or refresh the app on the iOS/Android device.
 
-**Expected Result:**
- 1. The iOS device reflects that the Daily Treat reward has already been collected today.
- 2. The Daily Treat popup does **not** appear on the iOS device.
- 3. The reward streak counter is consistent across both Android and iOS.
- 4. No reward duplication occurs.
+- **Expected Result:**
+  1. The iOS device reflects that the Daily Treat reward has already been collected today.
+  2. The Daily Treat popup does **not** appear on the iOS device.
+  3. The reward streak counter is consistent across both Android and iOS.
+  4. No reward duplication occurs.
 
 ---
 
