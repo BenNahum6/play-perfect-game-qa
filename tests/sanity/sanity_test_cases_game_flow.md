@@ -98,26 +98,37 @@
 **Expected Result:** User is taken to the Game Lobby screen.
 
 ## TC 7: First Real Game
-**Steps:**
-- Verify tapping Play deducts X diamonds and starts the game.
-- Verify game starts in standard mode without tutorial assistance.
+### Preconditions
+- User is logged in and on the Game Lobby screen.
+- User has sufficient diamonds to play.
 
-**Expected Results:**
-- Diamonds deducted accurately.
-- Game launches in standard mode (non-tutorial), stable and fully functional.
+### Test Steps and Expected Results
+**Step 1:** Tap the "Play" button to start the game.  
+**Expected Result:** The correct amount of diamonds (X) is deducted from the user's balance.
+
+**Step 2:** Observe the game launch after tapping "Play".  
+**Expected Result:** The game starts in standard (non-tutorial) mode, stable and fully functional.
+
+**Step 3:** Attempt to interact with all standard game functions (e.g., move cards, click "Undo" button).  
+**Expected Result:** All game functionalities respond normally without tutorial restrictions. The user is no longer in tutorial mode.
 
 ## TC 8: Daily Login Reward Screen
-**Steps:**
-- Verify Daily Login Reward screen appears automatically.
-- Verify current login streak day is displayed correctly.
-- Verify Collect button adds reward to inventory.
-- Verify screen transitions to main lobby after collection.
+### Preconditions
+- User has completed the tutorial and first real game.
+- User is entering the main lobby for the first time (not in tutorial mode).
 
-**Expected Results:**
-- Bonus screen appears once daily.
-- Login streak is accurate.
-- Collect button works.
-- App navigates to main lobby.
+### Test Steps and Expected Results
+**Step 1:** Wait on the main lobby screen after the first real game.  
+**Expected Result:** The Daily Login Reward screen appears automatically without user action.
+
+**Step 2:** Check the displayed login streak day on the reward screen.  
+**Expected Result:** The current login streak day is displayed correctly.
+
+**Step 3:** Tap the "Collect" button to claim the daily reward.  
+**Expected Result:** The reward is added to the user's inventory.
+
+**Step 4:** Observe the screen transition after collecting the reward.  
+**Expected Result:** The app navigates automatically to the main lobby screen.
 
 ## TC 9: First Time Game Lobby Entry
 **Steps:**
