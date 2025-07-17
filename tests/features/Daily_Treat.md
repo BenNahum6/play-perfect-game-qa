@@ -460,7 +460,7 @@ The **Daily Treat** feature rewards users for launching the game each day. On th
 
 ---
 
-## Test Case 26: Popup Load Time
+## Test Case 27: Popup Load Time
 
 - **Preconditions:**  
   1. The app is installed on the device.  
@@ -476,7 +476,7 @@ The **Daily Treat** feature rewards users for launching the game each day. On th
 
 ---
 
-## Test Case 27: Responsiveness of Popup Interaction
+## Test Case 28: Responsiveness of Popup Interaction
 
 - **Preconditions:**  
   1. The Daily Treat popup is displayed on the screen.
