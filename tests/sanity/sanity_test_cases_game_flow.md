@@ -131,14 +131,19 @@
 **Expected Result:** The app navigates automatically to the main lobby screen.
 
 ## TC 9: First Time Game Lobby Entry
-**Steps:**
-- Verify lobby screen loads without crashes or critical errors.
-- Verify available game entry options are displayed.
-- Verify tapping Play starts the game.
-- Verify navigation between screens via bottom bar works without crashes.
+## Preconditions
+- User has claimed the daily login reward.
+- User is currently in the main lobby.
 
-**Expected Results:**
-- Lobby loads with no errors.
-- Game options are visible.
-- Play works correctly.
-- Navigation bar works stably.
+## Test Steps and Expected Results
+**Step 1:** Check the current screen after completing the daily login reward collection.  
+**Expected Result:** The current screen is the main lobby screen ("Lobby").
+
+**Step 2:** Check that available game entry options are displayed (e.g., Play button).  
+**Expected Result:** Game entry options are visible and accessible.
+
+**Step 3:** Tap the "Play" button.  
+**Expected Result:** The game starts successfully.
+
+**Step 4:** Navigate between screens using the bottom navigation bar.  
+**Expected Result:** Navigation works smoothly without crashes or glitches.
