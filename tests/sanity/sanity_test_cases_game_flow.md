@@ -34,56 +34,68 @@
 **Expected Result:** App navigates to the tutorial screen.
 
 ## TC 3: Tutorial Mode
-**Steps:**
-- Verify tutorial enforces required user actions (cannot skip confirmation dialogs).
-- Verify visual pointer guides user to perform required actions that advance the tutorial.
-- Verify that pressing the Next button ends the tutorial game session immediately and navigates to the Game Over screen.
-- Verify tutorial session resumes from last step if app is closed or removed from memory mid-tutorial.
+### Preconditions
+- User has completed the registration flow.
+- App navigated to tutorial mode for the first time.
+- The device is connected to a stable internet connection.
 
-**Expected Results:**
-- Tutorial responds only after user completes guided actions.
-- Visual pointer leads user to next step.
-- Next button ends session and transitions to score summary.
-- Tutorial resumes from same point after relaunch.
+### Test Steps and Expected Results
+**Step 1:** Try to interact with elements allowed by the tutorial, elements **not** allowed by the tutorial, and press the "Next" button to finish the tutorial at any time.  
+**Expected Result:** Interactions with tutorial-allowed elements and the "Next" button succeed. interactions with non-allowed elements are blocked or ignored.
+
+**Step 2:** Observe the visual pointer guiding the user during the tutorial.  
+**Expected Result:** The visual pointer clearly indicates the next required action to advance the tutorial.
+
+**Step 3:** Press the "Next" button during the tutorial.  
+**Expected Result:** The tutorial session ends immediately and navigates to the Game Over screen.
+
+**Step 4:** Close or remove the app from memory during the tutorial, then relaunch the app.  
+**Expected Result:** The tutorial resumes from the step where it was interrupted.
 
 ## TC 4: End Game Prompt
-**Steps:**
-- Verify "End Game" screen shows confirmation dialog.
-- Verify screen is dimmed except "Submit" button spotlight.
-- Verify user cannot continue tutorial without selecting either Submit or Play On.
-- Verify "Submit" button confirms and ends tutorial game.
+### Preconditions
+- User is in tutorial mode and reaches the End Game prompt.
 
-**Expected Results:**
-- Confirmation dialog opens on End Game.
-- Spotlight effect highlights Submit.
-- User forced to choose "Submit" to proceed.
-- Submit ends the tutorial and moves to Game Over.
+### Test Steps and Expected Results
+**Step 1:** Press the "End" button to trigger the end game flow.  
+**Expected Result:** The "End Game" confirmation dialog appears.
+
+**Step 2:** Try to press the "Play On" button and the "Submit" button.  
+**Expected Result:** The "Play On" button is present but disabled and does not respond. the "Submit" button is highlighted, enabled, and responds to the press. Press "Submit" leading the user to the "Game over" screen.
 
 ## TC 5: Game Over Screen
-**Steps:**
-- Verify Game Over screen loads successfully without errors.
-- Verify score, time bonus, and total score are displayed correctly.
-- Verify "OK"/close (X) button dismisses the score screen without issues.
+### Preconditions
+- The game session has ended and the Game Over screen is triggered.
 
-**Expected Results:**
-- Game Over screen loads without crashes or freezes.
-- Score, Time Bonus, and Total Score are calculated and displayed correctly.
-- Pressing "OK" or close (X) exits the screen smoothly and transitions to the Leaderboard.
+### Test Steps and Expected Results
+**Step 1:** Wait for the Game Over screen to appear.  
+**Expected Result:** The Game Over screen loads successfully without crashes or freezes.
+
+**Step 2:** Check the displayed score, time bonus, and total score on the Game Over screen.  
+**Expected Result:** Score, Time Bonus, and Total Score are calculated and displayed correctly.
+
+**Step 3:** Press the "OK" or close (X) button to dismiss the Game Over screen.  
+**Expected Result:** The screen exits smoothly and the app transitions to the "Leaderboard" screen.
 
 ## TC 6: Leaderboard Screen
-**Steps:**
-- Verify leaderboard screen loads without errors.
-- Verify all players are listed sorted by total score descending.
-- Verify each entry shows player avatar, name, and score.
-- Verify "CLAIM" button successfully collects reward.
-- Verify user is taken to Game Lobby after claiming reward.
+### Preconditions
+- User has completed a game session and arrived at the Leaderboard screen.
 
-**Expected Results:**
-- Leaderboard loads properly.
-- Players sorted by score.
-- Entries include full player info.
-- CLAIM works and shows animation.
-- User lands in Game Lobby after.
+### Test Steps and Expected Results
+**Step 1:** Wait for the Leaderboard screen to load.  
+**Expected Result:** The Leaderboard screen loads without errors.
+
+**Step 2:** Review the list of players displayed on the Leaderboard.  
+**Expected Result:** Players are listed with the highest total score at the top, descending to the lowest.
+
+**Step 3:** Check each player's entry for avatar, name, and score.  
+**Expected Result:** Each entry shows the correct player avatar, name, and score.
+
+**Step 4:** Press the "CLAIM" button next to your player entry to collect the reward.  
+**Expected Result:** Reward is successfully collected and an animation plays.
+
+**Step 5:** Observe the screen transition after claiming the reward.  
+**Expected Result:** User is taken to the Game Lobby screen.
 
 ## TC 7: First Real Game
 **Steps:**
