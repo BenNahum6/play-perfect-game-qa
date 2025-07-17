@@ -5,13 +5,13 @@
 - The user has a stable internet connection.
 - Clean install of the app via APK file.
   
-**Step 1:** Install the APK.␣␣
+**Step 1:** Install the APK.  
 **Expected:** APK installs successfully without errors.
 
-**Step 2:** Launch the app and check if the notification permission prompt appears.␣␣
+**Step 2:** Launch the app and check if the notification permission prompt appears.  
 **Expected:** The notification permission prompt will appear on the first launch.
 
-**Step 3:** Grant Notification permission.␣␣
+**Step 3:** Grant Notification permission.  
 **Expected:** App proceeds to the Home screen smoothly.
 
 ## TC 2: Initial Registration Screen (Choose Your Avatar)
@@ -21,16 +21,16 @@
 - User has a stable internet connection.
 
 ### Test Steps and Expected Results
-**Step 1:** Select an avatar or upload a custom image.␣␣
+**Step 1:** Select an avatar or upload a custom image.  
 **Expected Result:** Avatar is selected or uploaded successfully without errors.
 
-**Step 2:** Check that the username field is autofilled.␣␣
+**Step 2:** Check that the username field is autofilled.  
 **Expected Result:** Username appears automatically and is editable by the user.
 
-**Step 3:** Tap on "Sign In" and enter a valid phone number.␣␣
+**Step 3:** Tap on "Sign In" and enter a valid phone number.  
 **Expected Result:** Phone number sign-in is completed successfully, **only if the country is supported**.
 
-**Step 4:** Tap the "Next" button.␣␣
+**Step 4:** Tap the "Next" button.  
 **Expected Result:** App navigates to the tutorial screen.
 
 ## TC 3: Tutorial Mode
