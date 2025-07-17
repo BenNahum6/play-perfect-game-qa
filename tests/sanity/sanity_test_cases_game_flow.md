@@ -1,33 +1,37 @@
 # Sanity Test Cases for Game Flows and New User Experience
 
-## Preconditions
-- Clean install of the app via APK file.
-- User has stable internet connection.
-
 ## TC 1: App Installation and Permissions
-**Steps:**
-- Verify APK installs successfully.
-- Verify notification permission prompt appears on first launch.
-- Verify app proceeds to home screen after permission is granted.
+## Preconditions
+- The user has a stable internet connection.
+- Clean install of the app via APK file.
+  
+**Step 1:** Install the APK.
+**Expected:** APK installs successfully without errors.
 
-**Expected Results:**
-- App installs without errors.
-- Permission prompt appears on first launch.
-- Home screen loads successfully after permission approval.
+**Step 2:** Launch the app and check if the notification permission prompt appears.
+**Expected:** The notification permission prompt will appear on the first launch.
+
+**Step 3:** Grant Notification permission.
+**Expected:** App proceeds to the Home screen smoothly.
 
 ## TC 2: Initial Registration Screen (Choose Your Avatar)
-**Steps:**
-- Verify user can select or upload avatar.
-- Verify username is autofilled and editable.
-- Verify phone number sign-in flow works correctly and is available only in supported countries.
-- Verify pressing Next advances to tutorial.
+### Preconditions
+- The app was installed via clean APK installation (already completed in TC 1).
+- User is launching the app for the **first time** after installation.
+- User has a stable internet connection.
 
-**Expected Results:**
-- Avatar selection and upload functions correctly.
-- Username appears and can be edited.
-- Phone number sign-in works in supported countries.
-- Pressing Next navigates to tutorial.
+### Test Steps and Expected Results
+**Step 1:** Select an avatar or upload a custom image.
+**Expected Result:** Avatar is selected or uploaded successfully without errors.
 
+**Step 2:** Check that the username field is autofilled.
+**Expected Result:** Username appears automatically and is editable by the user.
+
+**Step 3:** Tap on "Sign In" and enter a valid phone number.
+**Expected Result:** Phone number sign-in is completed successfully, **only if the country is supported**.
+
+**Step 4:** Tap the "Next" button.
+**Expected Result:** App navigates to the tutorial screen.
 
 ## TC 3: Tutorial Mode
 **Steps:**
