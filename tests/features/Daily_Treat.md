@@ -388,13 +388,13 @@ The **Daily Treat** feature rewards users for launching the game each day. On th
 - **Preconditions:**
   1. Open the app for the first time today.
   2. User is in guest mode (not logged in with phone number).
-  2. Daily Treat reward is available.
+  3. Daily Treat reward is available.
 
 - **Steps:**
-  2. The Daily Treat popup appears.
-  3. Collect the reward.
-  4. Log in to an existing user account.
-  5. Close the app and open the app again.
+  1. The Daily Treat popup appears.
+  2. Collect the reward.
+  3. Log in to an existing user account.
+  4. Close the app and open the app again.
 
 - **Expected Result:**
   1. The Daily Treat screen appears for the account registered based on the design.
@@ -461,7 +461,7 @@ The **Daily Treat** feature rewards users for launching the game each day. On th
 
 ---
 
-## Test Case 27: Popup Load Time
+### Test Case 27: Popup Load Time
 
 - **Preconditions:**  
   1. The app is installed on the device.  
@@ -477,7 +477,7 @@ The **Daily Treat** feature rewards users for launching the game each day. On th
 
 ---
 
-## Test Case 28: Responsiveness of Popup Interaction
+### Test Case 28: Responsiveness of Popup Interaction
 
 - **Preconditions:**  
   1. The Daily Treat popup is displayed on the screen.
