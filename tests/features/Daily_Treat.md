@@ -12,6 +12,7 @@ The **Daily Treat** feature rewards users for launching the game each day. On th
 - **Date of Execution**: July 17, 2025.  
 - **Tester**: Ben Nahum.  
 - **Network Conditions**: Tested under both online and offline modes.
+
 ---
 
 ## Test Case 1: Daily Treat Appears on First App Launch of the Day
@@ -343,22 +344,7 @@ The **Daily Treat** feature rewards users for launching the game each day. On th
 
 ---
 
-### Test Case 21: Accessibility / Screen Reader Test
-
-- **Preconditions:**
-  1. Device has TalkBack (or screen reader) enabled.
-
-- **Steps:**
-  1. Open app and receive Daily Treat popup.
-  2. Try to collect reward via screen reader or keyboard nav (if on emulator).
-
-- **Expected Result:**
-  1. UI is accessible (popup focusable, tappable).
-  2. Reward can be collected via accessibility tools.
-
----
-
-### Test Case 22: Cross-Platform Synchronization (Android & iOS) on Daily Treat Collection
+### Test Case 21: Cross-Platform Synchronization (Android & iOS) on Daily Treat Collection
 
 - **Preconditions:**
   1. User is logged into the same account on both an Android device and an iOS device.
@@ -376,7 +362,7 @@ The **Daily Treat** feature rewards users for launching the game each day. On th
 
 ---
 
-### Test Case 23: Localization and Text Layout (App Language Remains English)
+### Test Case 22: Localization and Text Layout (App Language Remains English)
 
 - **Preconditions:**
   1. App supports multiple device languages (e.g., Hebrew, English, others).
@@ -397,21 +383,39 @@ The **Daily Treat** feature rewards users for launching the game each day. On th
 
 ---
 
-### Test Case 24: Responsiveness Across Different Screen Resolutions
+### Test Case 23: Guest User Behavior on Daily Treat
 
 - **Preconditions:**
-  1. Daily Treat popup is available.
-  2. Devices with varying screen sizes and resolutions.
+  1. Open the app for the first time today.
+  2. User is in guest mode (not logged in with phone number).
+  2. Daily Treat reward is available.
 
 - **Steps:**
-  1. Open app on devices ranging from small phones to tablets.
-  2. Verify popup scales correctly to screen size.
-  3. Check that text and animations are fully visible without scrolling or clipping.
+  2. The Daily Treat popup appears.
+  3. Collect the reward.
+  4. Log in to an existing user account.
+  5. Close the app and open the app again.
 
 - **Expected Result:**
-  1. Popup is responsive and adapts well to all screen sizes.
-  2. No UI elements are hidden or clipped.
-  3. Consistent user experience across devices.
+  1. The Daily Treat screen appears for the account registered based on the design.
+  2. After login, reward status is based on the logged-in account.
+  3. Verify that reward data from the guest session is not merged with or carried over to the logged-in account.
+  4. When a user logs in after using the app as a guest, the rewards shown must reflect only the logged-in account's data, not the guest session's progress.
+
+---
+
+### Test Case 24: Accessibility / Screen Reader Test
+
+- **Preconditions:**
+  1. Device has TalkBack (or screen reader) enabled.
+
+- **Steps:**
+  1. Open app and receive Daily Treat popup.
+  2. Try to collect reward via screen reader or keyboard nav (if on emulator).
+
+- **Expected Result:**
+  1. UI is accessible (popup focusable, tappable).
+  2. Reward can be collected via accessibility tools.
 
 ---
 
@@ -439,24 +443,21 @@ The **Daily Treat** feature rewards users for launching the game each day. On th
 
 ---
 
-### Test Case 26: Guest User Behavior on Daily Treat
+### Test Case 26: Responsiveness Across Different Screen Resolutions
 
 - **Preconditions:**
-  1. Open the app for the first time today.
-  2. User is in guest mode (not logged in with phone number).
-  2. Daily Treat reward is available.
+  1. Daily Treat popup is available.
+  2. Devices with varying screen sizes and resolutions.
 
 - **Steps:**
-  2. The Daily Treat popup appears.
-  3. Collect the reward.
-  4. Log in to an existing user account.
-  5. Close the app and open the app again.
+  1. Open app on devices ranging from small phones to tablets.
+  2. Verify popup scales correctly to screen size.
+  3. Check that text and animations are fully visible without scrolling or clipping.
 
 - **Expected Result:**
-  1. The Daily Treat screen appears for the account registered based on the design.
-  2. After login, reward status is based on the logged-in account.
-  3. Verify that reward data from the guest session is not merged with or carried over to the logged-in account.
-  4. When a user logs in after using the app as a guest, the rewards shown must reflect only the logged-in account's data, not the guest session's progress.
+  1. Popup is responsive and adapts well to all screen sizes.
+  2. No UI elements are hidden or clipped.
+  3. Consistent user experience across devices.
 
 ---
 
