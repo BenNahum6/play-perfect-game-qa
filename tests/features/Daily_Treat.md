@@ -376,6 +376,93 @@ The **Daily Treat** feature rewards users for launching the game each day. On th
 
 ---
 
+### Test Case 23: Localization and Text Layout (App Language Remains English)
+
+- **Preconditions:**
+  1. App supports multiple device languages (e.g., Hebrew, English, others).
+  2. Daily Treat dosent collect today.
+
+- **Steps:**
+  1. Change the device language to various supported languages.
+  2. Launch the app.
+  3. Daily Treat is apear.
+  4. Observe the language and layout of the Daily Treat popup.
+  5. Check for text clipping, layout issues, and proper rendering.
+
+- **Expected Result:**
+  1. Regardless of the device language, the **app interface remains in English**.
+  2. Daily Treat popup text is shown in **English only**.
+  3. No text clipping, misalignment, or UI layout issues.
+  4. All UI elements are fully visible and rendered correctly.
+
+---
+
+### Test Case 24: Responsiveness Across Different Screen Resolutions
+
+- **Preconditions:**
+  1. Daily Treat popup is available.
+  2. Devices with varying screen sizes and resolutions.
+
+- **Steps:**
+  1. Open app on devices ranging from small phones to tablets.
+  2. Verify popup scales correctly to screen size.
+  3. Check that text and animations are fully visible without scrolling or clipping.
+
+- **Expected Result:**
+  1. Popup is responsive and adapts well to all screen sizes.
+  2. No UI elements are hidden or clipped.
+  3. Consistent user experience across devices.
+
+---
+
+### Test Case 25: OS Version Compatibility (Android & iOS)
+
+- **Preconditions:**
+  1. The app supports Android and iOS platforms.
+  2. The Daily Treat feature is available.
+  3. Test devices are available with a variety of OS versions:
+     - Android: Android 8 and above.
+     - iOS: iOS 13 and above.
+
+- **Steps:**
+  1. Install the app on devices running various versions of Android and iOS.
+  2. Launch the app on a day when Daily Treat is expected.
+  3. Trigger the Daily Treat popup.
+  4. Interact with the popup (e.g., claim reward).
+  5. Monitor app behavior and UI responsiveness.
+
+- **Expected Result:**
+  1. App runs smoothly and without crashes across all tested OS versions.
+  2. Daily Treat popup appears correctly on all devices.
+  3. All elements (texts, buttons, animations) function as expected.
+  4. No performance issues, layout problems, or missing content.
+
+---
+
+### Test Case 26: Guest User Behavior on Daily Treat
+
+- **Preconditions:**
+  1. Open the app for the first time today.
+  2. User is in guest mode (not logged in with phone number).
+  2. Daily Treat reward is available.
+
+- **Steps:**
+  2. The Daily Treat popup appears.
+  3. Collect the reward.
+  4. Log in to an existing user account.
+  5. Close the app and open the app again.
+
+- **Expected Result:**
+  1. The Daily Treat screen appears for the account registered based on the design.
+  2. After login, reward status is based on the logged-in account.
+  3. Verify that reward data from the guest session is not merged with or carried over to the logged-in account.
+  4. When a user logs in after using the app as a guest, the rewards shown must reflect only the logged-in account's data, not the guest session's progress.
+
+---
+
+
+
+
 ## Notes:
 - Observed no critical bugs in the flow; app behavior is consistent.
 
