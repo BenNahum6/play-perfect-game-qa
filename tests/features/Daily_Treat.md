@@ -81,8 +81,8 @@ The **Daily Treat** feature rewards users for launching the game each day. On th
   - The app was closed after collecting the reward.
 
 - **Steps**:
-  1. Launch the app again on the same date after closing it.
-  2. Observe whether the Daily Treat popup appears.
+  - 1. Launch the app again on the same date after closing it.
+  - 2. Observe whether the Daily Treat popup appears.
 
 - **Expected Result**:
   - The Daily Treat popup **does NOT** appear again on the same day after the reward was collected.
@@ -108,5 +108,177 @@ The **Daily Treat** feature rewards users for launching the game each day. On th
 
 ---
 
-##need to continue
+## Test Case 8: Reward Not Collected → Popup "Daily RTreat" Reappears on Next Launch
+
+- **Preconditions**:
+  - User opened the app and saw the Daily Treat popup.
+  - Did **not** tap to collect.
+  - Closed the app:
+    - Closing the app but leaving it in RAM (background),
+    - Or force closing the app completely (removed from RAM)
+
+- **Steps**: Reopen the app.
+
+- **Expected Result**:
+  - Daily Treat popup is shown again.
+  - Reward collection remains pending.
+
+---
+
+## Test Case 9: Daily Treat Works Without Internet Connection
+
+- **Preconditions**:
+  - Device is offline.
+  - It's the first launch of the day.
+
+- **Steps**:
+  1. Open the app.
+  2. Tap to collect reward.
+
+- **Expected Result**:
+  - Daily Treat is displayed.
+  - Reward is collected successfully.
+  - Counter is updated.
+
+---
+
+## Test Case 10: Collect Daily Treat Reward After Losing Internet Connection
+
+- **Preconditions**:
+  - Launch the app with internet connection.
+  - Daily Treat popup is displayed.
+
+- **Steps**:
+  1. Disable internet connection (e.g., turn on airplane mode).
+  2. Tap anywhere on the Daily Treat popup to collect the reward.
+
+- **Expected Result**:
+  - Reward collection animation plays.
+  - Diamonds are added to the counter.
+  - App handles offline reward collection gracefully.
+
+---
+
+## Test Case 11: Animation of Diamonds Is Triggered on Reward Collect
+
+- **Preconditions**: 
+ - User is launching the app for the first time on day.
+ - Daily Treat popup is active.
+
+- **Steps**: Tap anywhere on the popup.
+
+- **Expected Result**: Diamonds fly to the top of the screen toward the diamond counter.
+
+---
+
+## Test Case 12: Correct Diamond Count Is Added After Collection
+
+- **Preconditions**:
+  - User has a known diamond balance (e.g., 120).
+  - Daily reward is known (e.g., +10).
+
+- **Steps**: Tap to collect reward.
+
+- **Expected Result**:
+  - New balance should be 130.
+  - Animation reflects this change.
+
+---
+
+## Test Case 13: Daily Treat Reward Not Granted Twice on Different Devices Same Day
+
+- **Preconditions**:
+  - User is logged into the same account (e.g., +972 54XXXXXXX) on Device A and Device B.
+  - Daily Treat reward for today has been collected on Device A.
+
+- **Steps**:
+  1. On Device B, launch the app.
+  2. Observe if the Daily Treat popup appears.
+
+- **Expected Result**:
+  - Daily Treat popup **does NOT** appear on Device B after the reward was collected on Device A.
+  - Reward is not granted twice.
+  - User is taken directly to the Lobby screen on Device B.
+
+---
+
+## Test Case 14: Daily Treat Reward Collection Synchronizes Across Devices
+
+- **Preconditions**:
+  - User is logged into the same account on Device A and Device B.
+  - Both devices have internet connectivity.
+  - Daily Treat reward for today has NOT been collected on either device.
+
+- **Steps**:
+  1. On Device A, open the app and collect the Daily Treat reward.
+  2. Immediately, open or refresh the app on Device B.
+
+- **Expected Result**:
+- No Daily Treat popup appears on Device B.
+- The rewards counter (e.g., diamond count) on Device B matches the updated counter from Device A.
+
+---
+
+## Test Case 15: Streak Progress Consistency Between Devices
+
+- **Preconditions**:
+  - User is logged into the same account on Device A and Device B.
+  - Internet connection is active on both devices.
+  - User has an active streak of N days recorded on Device A.
+
+- **Steps**:
+  1. On Device B, open the app.
+  2. Verify the displayed streak day on the Daily Treat popup.
+
+- **Expected Result**:
+  - Streak day displayed on Device B matches the streak day on Device A.
+  - Rewards correspond correctly to the current streak day on both devices.
+
+---
+
+## Test Case 16: Simultaneous Daily Treat Reward Collection on Two Devices
+
+- **Preconditions**:
+  - User is logged into the same account on **Device A** and **Device B**.
+  - Both devices have an active internet connection.
+  - Daily Treat popup is visible **simultaneously** on both devices.
+  - Daily Treat reward for today has **not** been collected yet.
+
+- **Steps**:
+  1. On **Device A**, tap to collect the Daily Treat reward.
+  2. At the **same time**, tap to collect the reward on **Device B**.
+
+- **Expected Result**:
+  - **Only one reward** is granted for the current day.
+  - The second device shows the reward was already collected or skips the reward animation.
+  - No duplicate rewards are added to the player's balance (e.g., coins or diamonds).
+  - The **reward counter** and **streak progress** remain synchronized across both devices.
+  - Optionally, Device B may display a message:  
+    `"Reward already collected today."`
+
+---
+
+## Test Case 17: Offline Device Synchronization After Reconnecting
+
+- **Preconditions**:
+  - User is logged into the same account on Device A and Device B.
+  - Device A collects the Daily Treat reward online.
+  - Device B is offline (no internet).
+
+- **Steps**:
+  1. On Device B, open the app (offline).
+  2. Observe if Daily Treat popup appears.
+  3. Reconnect Device B to the internet.
+  4. Refresh or reopen the app on Device B.
+
+- **Expected Result**:
+  - Initially, Device B may show the Daily Treat popup.
+  - After reconnecting, Device B syncs and recognizes the reward was collected on Device A.
+  - Daily Treat popup no longer appears.
+  - Streak progress is updated accordingly.
+
+---
+
+## Notes:
+- Observed no critical bugs in the flow; app behavior is consistent.
 
