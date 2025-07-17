@@ -174,8 +174,8 @@ The **Daily Treat** feature rewards users for launching the game each day. On th
 ## Test Case 11: Animation of Diamonds Is Triggered on Reward Collect
 
 - **Preconditions**: 
- 1. User is launching the app for the first time on day.
- 2. Daily Treat popup is active.
+  1. User is launching the app for the first time on day.
+  2. Daily Treat popup is active.
 
 - **Steps**:
   1. Tap anywhere on the popup.
@@ -317,8 +317,8 @@ The **Daily Treat** feature rewards users for launching the game each day. On th
   2. Open the App in three divices (A & B & C).
 
 - **Steps:**
- 1. Collect reward from Device A.
- 2. Open app on Device B and C simultaneously.
+  1. Collect reward from Device A.
+  2. Open app on Device B and C simultaneously.
 
 - **Expected Result:**
   1. No reward duplication.
@@ -460,9 +460,44 @@ The **Daily Treat** feature rewards users for launching the game each day. On th
 
 ---
 
+## Test Case 26: Popup Load Time
 
+- **Preconditions:**  
+  1. The app is installed on the device.  
+  2. User has a stable internet connection.
 
+- **Steps:**  
+  1. Launch the app on a day when the Daily Treat is expected to appear.  
+  2. Measure the load time from app launch until the Daily Treat popup fully appears on the screen.
 
-## Notes:
-- Observed no critical bugs in the flow; app behavior is consistent.
+- **Expected Result:**  
+  1. The popup load time should not exceed 2 seconds (or another acceptable threshold).  
+  2. No delays or glitches during popup loading.
 
+---
+
+## Test Case 27: Responsiveness of Popup Interaction
+
+- **Preconditions:**  
+  1. The Daily Treat popup is displayed on the screen.
+
+- **Steps:**  
+  1. Tap on various locations on the popup (either on the icon or anywhere on the popup).  
+  2. Measure the response time from tap until the reward collection animation starts.
+
+- **Expected Result:**  
+  1. Response time should be immediate or under 300 milliseconds.  
+  2. The app does not freeze or lag during interaction.
+
+---
+
+## Notes
+
+- No critical bugs or crashes found.
+- Consistent behavior across devices, network states, and app versions.
+- Smooth UI animations and responsive interactions.
+- Reward synchronization works across devices and platforms.
+- Accessibility support is verified.
+- Offline and reconnect scenarios handled well.
+- Timezone changes do not affect reward logic.
+- Performance meets acceptable load and response times.
