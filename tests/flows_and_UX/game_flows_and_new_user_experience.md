@@ -27,16 +27,16 @@ This is the first **Onboarding** screen, where the user creates their initial id
 
 The screen provides the following customization options:
 
-1. **Avatar Selection**  
+- **Avatar Selection**  
    - The user can choose a visual avatar from a wide selection of pre-designed characters.  
    - Additionally, there is an option to upload a custom image directly from the device's gallery.  
    - *Note:* The gallery opens using the native Android file picker.
 
-2. **Username Selection**  
+- **Username Selection**  
    - A random (auto-generated) name is pre-filled by default.  
    - The user can either accept it or manually enter a preferred name.
 
-3. **Sign in (Optional)**  
+- **Sign in (Optional)**  
    - There is an option to sign in using a mobile number.
    - Upon clicking the **Sign In** button, a new window appears with:
      - A country selector dropdown
@@ -96,9 +96,9 @@ After completing the tutorial game, the user is presented with a **results scree
 
 Three performance parameters are displayed prominently in the center of the screen:
 
-1. **Score** – Points accumulated based on in-game moves and strategy  
-2. **Time Bonus** – Bonus points awarded for completing the game quickly  
-3. **Total Score** – A calculated sum: **Score + Time Bonus**
+- **Score** – Points accumulated based on in-game moves and strategy  
+- **Time Bonus** – Bonus points awarded for completing the game quickly  
+- **Total Score** – A calculated sum: **Score + Time Bonus**
 
 ### UI Elements:
 
