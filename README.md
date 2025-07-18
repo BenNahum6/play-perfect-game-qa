@@ -1,6 +1,8 @@
 # Mobile Solitaire Smash Game QA Test Documentation
 
-This repository contains manual QA documentation and test cases for a mobile game. The objective is to validate the core functionality, user experience, and stability of the game as part of daily QA routines.
+This QA test documentation was created for **Play Perfect** as part of a manual QA assignment for their mobile card game **Solitaire Smash**.
+It aims to validate the core functionality, user experience, and stability of the game through detailed hands-on testing.
+The repository includes documented game flows, a comprehensive sanity test covering the user journey from installation to gameplay, and a feature-specific test case for the **Daily Treat** system.
 
 ## Instructions
 
