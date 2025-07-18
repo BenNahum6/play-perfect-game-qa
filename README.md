@@ -24,3 +24,7 @@ tests/
     └── sanity_test_cases_game_flow.md
 ```
 
+Quick Links:
+- [Daily Treat Feature Test Case](tests/features/Daily_Treat.md)
+- [Full Game Flow & UX Analysis](tests/flows_and_UX/game_flows_and_new_user_experience.md)
+- [Sanity Test Cases](tests/sanity/sanity_test_cases_game_flow.md)
